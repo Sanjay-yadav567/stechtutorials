@@ -1,0 +1,129 @@
+body {
+    font-family: 'Heebo', sans-serif;
+  }
+  
+.bg-primary{
+    background: #018a73 !important;
+}
+.container-fluid{
+    padding: 0 100px !important;
+}
+.nav-item{
+    padding: 0 20px;
+}
+#navbarSupportedContent{
+    padding: 0 200px;
+}
+.nav-item{
+    font-weight: 500;
+    font-size: 18px;
+}
+.nav-link{
+    color: whitesmoke;
+}
+.nav-link:hover{
+    color: rgb(255, 230, 0);
+}
+.dropdown-item{
+    color: #ff4700 !important;
+    font-weight: 500;
+}
+#btn:hover{
+    color: white !important;
+    background: #ff0000 !important;
+}
+.card a{
+    color: #018a73 !important;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+.card{
+    border: none ;
+}
+#so-cat{
+    margin-left: 20px !important;
+    padding-left: 20px;
+    height: 100%;
+    border: 2px solid #018a73;
+    border-radius: 20px;
+}
+.container-fluid-2{
+    padding: 0 70px;
+}
+.bg-secondery{
+    background: #ffbfae!important;
+}
+.navbar-brand{
+    color: #135e00;
+    font-weight: 500;
+    font-size: 16px;
+}
+.navbar-brand:hover{
+    color: rgb(255, 0, 0);
+}
+.bg-about{
+    background: rgb(202, 202, 197) !important;
+}
+.collection {
+    padding-top: 10px;
+}
+.collactio-item{
+    color: #613900;
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: 10px !important;
+}
+.collactio-item:hover{
+    color: #135e00;
+    font-weight: bold;
+}
+.about h2{
+    color: #f14907;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.about span{
+    color: #ff0000;
+    font-size: 16px;
+    font-weight: bold;
+}
+.list-unstyled a{
+    color: #888a01 !important;
+    text-decoration: none;
+    font-size: 17px;
+}
+.coname a{
+    color: #888a01 !important;
+    text-decoration: none;
+    font-size: 17px;
+}
+.list-inline-item .fa{
+    padding: 8px;
+    font-size: 20px;
+}
+.list-inline-item a{
+    text-decoration: none;
+}
+.fa-facebook{
+    color: #ffffff; 
+    /* border: 2px solid #00b7ff; */
+    background-color: #1877f2;
+    border-radius: 10px;
+}
+.fa-instagram{
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    color: #ffffff;
+    /* border: 2px solid #00b7ff; */
+    border-radius: 50px;
+}
+.fa-youtube-play{
+    color: #ffffff;
+    background-color: #FF0000;
+    /* border: 2px solid #00b7ff; */
+    border-radius: 50px;
+}

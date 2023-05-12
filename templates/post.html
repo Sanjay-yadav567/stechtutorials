@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %} Post {% endblock title %}
+
+{% block content %} 
+
+ <div class="container">
+    <div class="row">
+        <div class="col-9 s12 m10 ">
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.add_date }} {{ post.cat.title }}</p>
+            <img src="/media/{{post.image}}" class="img-fluid mx-auto d-block" style='margin-top:20px; width:500px; height:350px,' alt="">
+            <br>
+            <p>
+                {{ post.content|safe }}
+            </p>
+
+
+        </div>
+
+{% comment %} Categories Section {% endcomment %}
+        <div id="so-cat" class="col s-12 m-2 p-2 position-sticky top-0 ">
+            <h4>Some Categories</h4>
+            <hr>
+            {% for cat in cats %}
+            <div class="card item ">
+                <div class="card-content">
+                    <div class="container center-align">
+                        <a id="cat-title" href="/category/{{ cat.url }}" >{{ cat.title }}</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div> 
+    </div>
+ </div>
+{% endblock %}

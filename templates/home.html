@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %} Stechtutorials{% endblock title %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            {% for p in posts %}
+
+            <div class="row mt-5">
+
+                <div class="col-8 m-8">
+                    
+                    <h1>{{p.title}}</h1>
+                    {{p.content |truncatewords:35| safe}} 
+
+                    <div class="mt-3">
+                        <a href="/blog/{{ p.url }}" id="btn" class="btn bg-primary">Read More</a>
+                    </div>
+
+                </div>
+
+                <div class="col ">
+                    <img src="/media/{{p.image}}" class="img-fluid" style='margin-top:50px; width:300px; height:250px,' alt="">
+                </div>
+               
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock  %}

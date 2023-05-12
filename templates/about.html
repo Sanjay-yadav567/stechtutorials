@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} About {% endblock title %}
+
+{% block content %} 
+<div class="container pt-4 mt-3 mb-3 bg-about">
+    <div class="row">
+        <div class="col-5">
+            <img src="{% static 'img/myimg.jpg' %}" class="img-fluid mx-auto d-block mt-5" style="">
+        </div>
+        <div class="col-7 about" >
+            <h2>About Me & My Blog</h2>
+            <p>Welcome to Stechtutorials, your one-stop destination for all things related to computer knowledge and programming!</p>
+            <p>Hello and welcome to my blog! My name is <span><b>Sanjay Yadav</b></span>, and I'm a recent MCA graduate with a passion for all things related to technology and programming.<br>
+            Throughout my MCA program, I gained a deep understanding of computer science concepts and programming languages, which I'm excited to share with others through this blog. I believe that technology can be a powerful tool for solving complex problems and making people's lives easier, and my goal is to help others harness the power of technology to achieve their own goals. <br>
+            On this blog, you'll find a variety of articles, tutorials, and resources related to computer science and programming. Whether you're a beginner or an experienced programmer, there's something here for everyone. I'll be sharing tips and tricks for programming languages such as  Python,JavaScript, C etc , as well as exploring topics like data structures, algorithms, and software development methodologies.  <br>
+            I hope you find this blog to be a valuable resource for enhancing your computer knowledge and programming skills. Thank you for visiting, and please feel free to leave a comment or contact me if you have any questions or suggestions for future blog posts!</p>
+            <p>My mission is to empower individuals with the knowledge and skills needed to succeed in the digital age. Whether you're a beginner or an experienced programmer, our tutorials, tips, and resources are designed to help you achieve your goals.
+
+            At Stechtutorials, we believe that technology is a powerful tool that can be used to make the world a better place. That's why we're passionate about sharing our expertise and helping others learn how to harness the power of computers and programming.</p>
+        </div> 
+    </div>
+ </div>
+{% endblock %}
